@@ -14,5 +14,3 @@ The LoRa device uses the European LoRa frequency band for communication. The sen
 
 ## Camera Server
 The camera server consists of a Raspberry Pi 3 model B+, along with a Picamera module v2. It runs as a basic multithreaded HTTP server with and runs over HTTPS with a TLS certificate served by Let's Encrypt. Some minor security implementations has been installed. [Read more..](https://github.com/LasseUlvatne/IoT-Project-2DT301/tree/master/Camera%20server)
-
-
