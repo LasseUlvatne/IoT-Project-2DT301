@@ -5,7 +5,9 @@ The following components were used:
 
 <!-- ABOUT THE PROJECT -->
 ## Setup
-For this project the Raspberry Pi along with the camera module was implemented at one of the authors home. A script creating a simple HTTP server along with sending video stream, or image handling, which could be accessed remotely through port forwarding on the router at site. 
+For this project the Raspberry Pi along with the camera module was implemented at one of the authors home. A script creating a simple HTTP server along with sending video stream, or image handling, which could be accessed remotely through port forwarding on the router at site. The launcher.sh bash script was used to run the code upon reboot of the Raspberry Pi.
+
+The server is started by running [camera.py](https://github.com/LasseUlvatne/IoT-Project-2DT301/blob/master/Camera%20server/camera.py).
 
 ## Let's encrypt
 A SSL/TLS certificate was installed served by [Let's encrypt](https://letsencrypt.org/), using the scripts provided by [Certbot](https://certbot.eff.org/), to enable a secure connection over HTTPS.
