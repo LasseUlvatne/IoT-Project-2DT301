@@ -70,7 +70,7 @@ def recv_msg():
 
     # get any data received (if any...)
     data = s.recv(64)
-    print(data, len(data), data.decode('utf-8'))
+    print('Ack received, controlling..')
     if(len(data) > 0):
         return data[0]
     else:
@@ -102,6 +102,7 @@ def sendrecv():
         # If ack has been received let server handle itself before new measurements.
         if(ack >= 0 and ack == check_ack):
             pycom.rgbled(palette.COLOUR_WHITE)
+            print('Correct ack received from server.')
             send_msg(('ack' + message).encode('utf-8'))
             time.sleep(HOLD_SENSOR)
             print('Searching for motion...')
